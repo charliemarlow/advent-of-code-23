@@ -36,7 +36,4 @@ time, distance = lines.map do |line|
   line.split(':')[1].split(' ').join('').to_i
 end
 
-puts time - (distance / time.to_f).ceil
-byebug
-
-puts '42550411' # ways_to_win(time, distance)
+ways_to_win(time, distance)
