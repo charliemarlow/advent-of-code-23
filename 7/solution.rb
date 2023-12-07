@@ -1,5 +1,3 @@
-
-
 # Idea: custom sort function for hands
 # def score_hand looks at frequency of the cards and returns an integer value repping
 # it's score
