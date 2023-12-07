@@ -1,12 +1,9 @@
-require 'byebug'
-
 file = File.open('5/input.txt')
 lines = file.readlines
-
 seeds = lines[0].split(':')[1].split(' ').map(&:to_i)
+
 seed_ranges = []
 i = 0
-
 while i < seeds.size do
   range = (seeds[i]..seeds[i] + seeds[i + 1] - 1)
   seed_ranges << range
@@ -33,7 +30,6 @@ end
 
 def convert(sources, maps)
   converted = []
-
   maps.each do |nxt, start, length|
     map_range = (start..start + length - 1)
     factor = nxt - start
