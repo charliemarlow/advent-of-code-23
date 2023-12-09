@@ -13,7 +13,6 @@ def differences(arr)
   result
 end
 
-
 result = histories.sum do |history|
   stack = [0]
   while history.uniq.size > 1
